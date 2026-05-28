@@ -1,0 +1,20 @@
+[
+    {
+        "amount": 50.0,
+        "description": "tp",
+        "date": "2026-05-29",
+        "category": "Transportation"
+    },
+    {
+        "amount": 10.0,
+        "description": "kurkure packet",
+        "date": "2026-0519",
+        "category": "Groceries"
+    },
+    {
+        "amount": 20.0,
+        "description": "chips packet",
+        "date": "2026-05-29",
+        "category": "Groceries"
+    }
+]
