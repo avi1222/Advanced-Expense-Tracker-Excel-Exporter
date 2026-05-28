@@ -1,100 +1,84 @@
-# Expense Tracker with Excel Exporter
+# Expense Tracker with Expense Categorization
 
 ## Project Overview
 
-This is a Python-based Expense Tracker application that allows users to:
+This is an advanced Python-based Expense Tracker application that helps users record, manage, categorize, and analyze their daily expenses efficiently.
 
-- Add expenses
-- Edit expenses
-- Delete expenses
-- Search expenses
-- View expense summaries
-- Export expenses to an Excel sheet
-- Visualize expenses using charts
-- Set category budgets
+The project includes features such as:
 
-The project uses Python concepts such as:
-- Lists
-- Dictionaries
-- Functions
-- File Handling
-- Exception Handling
-- External Libraries
+* Expense recording
+* Expense categorization
+* Budget tracking
+* Excel export
+* Expense summaries
+* Data visualization
+* Search and filtering
 
 ---
 
 # Features
 
-## 1. Add Expense
-Users can add:
-- Amount
-- Description
-- Date
-- Category
+## Expense Management
 
-Custom categories can also be added.
+* Add expenses
+* Edit expenses
+* Delete expenses
+* View all expenses
 
 ---
 
-## 2. View Expenses
-Displays all saved expenses with:
-- Date
-- Description
-- Amount
-- Category
+## Expense Categorization
+
+* Predefined categories
+* Custom category creation
+* Remove categories
+* Filter expenses by category
+* Grouped categories
 
 ---
 
-## 3. Edit Expense
-Allows modification of existing expenses.
+## Expense Analysis
+
+* Total spending
+* Category-wise spending
+* Highest and lowest expense
+* Highest and lowest spending category
+* Percentage spending analysis
 
 ---
 
-## 4. Delete Expense
-Allows deletion of expenses.
+## Budget Tracking
+
+* Set budgets for categories
+* Receive warnings when budget exceeds limit
 
 ---
 
-## 5. Search Expense
-Search expenses using keywords.
+## Search Functionality
+
+* Search expenses using keywords
+* Filter expenses by category
 
 ---
 
-## 6. Expense Summary
-Shows:
-- Total spending
-- Category-wise spending
-- Average expenses
-- Highest expense
-- Lowest expense
+## Excel Export
+
+* Export all expenses into an Excel file (`expenses.xlsx`)
 
 ---
 
-## 7. Export to Excel
-Exports all expense records into:
+## Data Visualization
 
-expenses.xlsx
-
----
-
-## 8. Expense Chart
-Displays a pie chart of expenses by category using Matplotlib.
-
----
-
-## 9. Budget Tracking
-Users can:
-- Set category budgets
-- Receive warnings when budget is exceeded
+* Pie chart visualization using `matplotlib`
 
 ---
 
 # Technologies Used
 
-- Python
-- JSON
-- openpyxl
-- matplotlib
+* Python
+* JSON
+* openpyxl
+* matplotlib
 
 ---
 
@@ -108,11 +92,9 @@ pip install openpyxl matplotlib
 
 ---
 
-# How to Run the Program
+# How to Run
 
-Open terminal or command prompt.
-
-Run:
+Run the following command:
 
 ```bash
 python expense_tracker.py
@@ -122,11 +104,7 @@ python expense_tracker.py
 
 # Menu Options
 
-When the program starts, the following menu appears:
-
 ```text
-===== Expense Tracker =====
-
 1. Add Expense
 2. View Expenses
 3. Edit Expense
@@ -136,163 +114,45 @@ When the program starts, the following menu appears:
 7. Export To Excel
 8. Show Expense Chart
 9. Set Budget
-10. Exit
+10. View Categories
+11. Add Category
+12. Remove Category
+13. Filter By Category
+14. Category Statistics
+15. Show Grouped Categories
+16. Category Suggestions
+17. Exit
 ```
 
 ---
 
-# How to Use
+# Data Structures and Algorithms Used
 
-## Add Expense
-Choose option 1.
+## Data Structures
 
-Enter:
-- Amount
-- Description
-- Date
-- Category
+* List
+* Dictionary
+* JSON File Storage
 
-Example:
+## Algorithms Used
 
-```text
-Enter amount: ₹250
-Enter description: Pizza
-Enter date: 2025-05-25
-Choose category: Entertainment
-```
-
----
-
-## View Expenses
-Choose option 2.
-
-Displays all saved expenses.
-
----
-
-## Edit Expense
-Choose option 3.
-
-Select expense number and enter updated details.
-
----
-
-## Delete Expense
-Choose option 4.
-
-Select expense number to delete.
-
----
-
-## Search Expense
-Choose option 5.
-
-Enter keyword(description).
-
-Example:
-
-```text
-pizza
-```
-
----
-
-## Expense Summary
-Choose option 6.
-
-Displays:
-- Total spending
-- Category-wise spending
-- Average expense
-- Highest expense
-- Lowest expense
-
----
-
-## Export to Excel
-Choose option 7.
-
-Creates:
-
-```text
-expenses.xlsx
-```
-
----
-
-## Show Expense Chart
-Choose option 8.
-
-Displays pie chart of category expenses.
-
----
-
-## Set Budget
-Choose option 9.
-
-Enter:
-- Category
-- Budget amount
-
-The system warns if expenses exceed budget.
-
----
-
-# Data Structures Used
-
-## List
-Stores all expenses.
-
-Example:
-
-```python
-expenses = []
-```
-
----
-
-## Dictionary
-Stores each expense.
-
-Example:
-
-```python
-{
-    "amount": 250,
-    "description": "Pizza",
-    "date": "2025-05-25",
-    "category": "Food"
-}
-```
+* Linear Search
+* Summation
+* Percentage Calculation
+* Max/Min Functions
+* File Handling
+* Excel Export
+* Data Visualization
 
 ---
 
 # Files Generated
 
-## expenses.json
-Stores expense data permanently.
-
-## expenses.xlsx
-Excel export file.
-
----
-
-# Sample Output
-
-```text
-Expense added successfully!
-
-Expense Summary
---------------------------------
-
-Total Spending: ₹1200
-
-Food: ₹500
-Transportation: ₹300
-Entertainment: ₹400
-```
+* `expenses.json`
+* `expenses.xlsx`
 
 ---
 
 # Author
+
 Avi
